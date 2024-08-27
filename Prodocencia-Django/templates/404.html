@@ -1,0 +1,33 @@
+
+
+
+{% extends './base.html' %}
+
+{% block title%}Página Não Encontrada{% endblock %}
+
+{% load static %}
+
+{% block content %} 
+
+<section class="topics text">
+    <div class="topicsTextInner">
+        <h2>
+            Desculpe! A página que você está tentando acessar não existe!
+        </h2>
+        {% comment %} <img class="img-backless" src="{% static 'media/commonErrors/3/certo.png' %}" alt="Imagem" onclick="openModal(this)"/> {% endcomment %}
+
+    </div>
+</section>
+
+
+<a href="home" class="btnToMakeBorder">
+    <section class="buttons hover-effect5">
+        <div>
+            <h3>
+                Retornar à Página Inicial
+            </h3>
+        </div>
+    </section>
+</a>
+
+{% endblock %}  

@@ -1,0 +1,7 @@
+services:
+  projetoprogramar:
+    build: .
+    ports:
+      - 8110:8110
+    volumes:
+      - ./database:/root/Prodocencia-Django/database

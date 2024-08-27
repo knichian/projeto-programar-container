@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+</head>
+<body>
+    <h1>Bem-vindo ao Admin</h1>
+
+    <ul>
+        {% for app in app_list %}
+            <li>
+                <h2>{{ app.name }}</h2>
+                <ul>
+                    {% for model in app.models %}
+                        <li><a href="{{ model.admin_url }}">{{ model.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,408 @@
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Programar -</title>
+    <link rel="icon" type="image/x-icon" href="./staticmedia/assets/favicon.ico">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <div class="page">
+
+        <div class="header">
+            <div class="headerContent" id="headerTitle">
+                <span translate="no"><a href="/">Projeto Programar - Prodocência</a></span>
+            </div>
+
+            <nav role="navigation" id="menuNav">
+                <div id="menuToggle">
+
+                    <input id="button-menu" type="checkbox" onclick="toggle(this)"/>
+                    
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  
+                    <ul id="menu">
+
+                        <li>
+                            <a href="/">Início</a>
+                        </li>
+
+                        <li>
+                            <a href="projetos">Projetos</a>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="percurso">
+                            <label class="lbInput" for="percurso">Percurso</label>
+                            <img loading="lazy" class= "arrow" src="{% static 'media/assets/arrow.png'%}" alt=".">
+        
+                            <ul>
+                                <li>
+                                    <a href="roadmap">RoadMap</a>   
+                                </li>
+
+                                <li>                                
+                                    <input type="checkbox" id="level0">
+                                    <label class="lbInput" for="level0">Nível 0</label>
+                                    <img loading="lazy" class= "arrow" src="{% static 'media/assets/arrow.png'%}" alt=".">
+
+                                    <ul>
+
+                                        <li>
+                                            <input type="checkbox" id="computerArq">
+                                            <label class="lbInput" for="computerArq">Arquitetura de Computadores</label>
+                                            <img loading="lazy" class= "arrow" src="{% static 'media/assets/arrow.png'%}" alt=".">
+                                            
+                                            <ul>
+                                                <li>
+                                                    <a href="computerArq">O que é</a>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="dataStorage">
+                                                    <label class="lbInput" for="dataStorage">Amazenamento de Dados</label>
+                                                    <img loading="lazy" class= "arrow" src="{% static 'media/assets/arrow.png'%}" alt=".">
+
+                                                    <ul>
+                                                        <li>
+                                                            <a href="ramMemory">
+                                                                Memória RAM
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                            <a href="internalStorage">
+                                                                Armazenamento Interno
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="page">
+                                                                Página
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="dataProcessing">
+                                                    <label class="lbInput" for="dataProcessing">Processamento de Dados</label>
+                                                    <img loading="lazy" class= "arrow" src="{% static 'media/assets/arrow.png'%}" alt=".">
+                                                    
+                                                    <ul>
+                                                        <li>
+                                                            <a href="randomAcess">
+                                                                Acesso Aleatório
+                                                            </a>
+                                                        </li>
+            
+                                                        <li>
+                                                            <a href="processors">
+                                                                Processadores
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+            
+                                                </li>
+                    
+                                                <li>
+                                                    <input type="checkbox" id="computerLimitations">
+                                                    <label class="lbInput" for="computerLimitations">Limitações do Computador</label>
+                                                    <img class= "arrow" src="{% static 'media/assets/arrow.png'%}" alt=".">
+            
+                                                    <ul>
+                                                        <li>
+                                                            <a href="fileSize">
+                                                                Tamanho do Arquivo
+                                                            </a>
+                                                        </li>
+            
+                                                        <li>
+                                                            <a href="processingCapacity">
+                                                                Capacidade de Processamento
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+            
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="extraComputerArq">
+                                                    <label class="lbInput" for="extraComputerArq">Extra</label>
+                                                    <img loading="lazy" class= "arrow" src="{% static 'media/assets/arrow.png'%}" alt=".">
+            
+                                                    <ul>
+                                                        <li>
+                                                            <a href="quiz">
+                                                                Quiz
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="computerArqVideo">
+                                                                Video sobre arquitetura de computadores
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+            
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <input type="checkbox" id="level1">
+                                    <label class="lbInput" for="level1">Nível 1</label>
+                                    <img loading="lazy" class= "arrow" src="{% static 'media/assets/arrow.png'%}" alt=".">
+
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="datatype">
+                                            <label class="lbInput" for="datatype">Tipos de Dados</label>
+                                            <img loading="lazy" class= "arrow" src="{% static 'media/assets/arrow.png'%}" alt=".">
+
+                                            <ul>
+                                                <li>
+                                                    <a href="inteiro">Inteiro</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="real">Real</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="caractere">Caractere</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="string">String</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="boolean">Booleano</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- <li>
+                                    <input type="checkbox" id="algo3">
+                                    <label class="lbInput" for="algo3"> Algo 3</label>
+                                    <img loading="lazy" class= "arrow" src="{% static 'media/assets/arrow.png'%}" alt=".">
+
+                                    <ul>
+                                        <li>
+                                            <a href="">sub-algo1</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="">sub-algo2</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="">sub-algo3</a>
+                                        </li>
+                                    </ul>
+                                </li> -->
+                                
+                            </ul>
+
+                        </li>
+
+                        <!-- <li>
+                            <input type="checkbox" /> Level 2
+
+                            <ul>
+                                <li>
+                                    Algo 1
+                                    <ul>
+                                        <li>Algo 1.2</li>
+                                        <li>Algo 2.2</li>
+                                        <li>Algo 3.2</li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    Algo 2
+                                    <ul>
+                                        Algo 2.2
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    Algo 3
+                                    <ul>
+                                        Algo 3.2
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </li> -->
+
+                        <!-- <li>Level 3</li> -->
+
+                        <li>
+                            <a href="form">Questionário</a>
+                        </li>
+
+                    </ul> 
+
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="headerInv"></div>
+
+        <div class="main" id="main">  
+
+            <section class="topics-title">
+                
+                <div class="container-swap">
+                    <h1>Programar é</h1>
+                    <h3><span class="typedTextSwap">
+                        </span><span class="cursorSwap"><span class="cursor">&nbsp;</span></span>
+                    </h3>
+                </div>
+            </section>
+
+            <section class="topics text">
+                <div class="topicsTextInner">
+                    <h2 id="siteObjectives">
+                        Objetivo do site
+                    </h2> 
+        
+                    <h3>
+                        Ensinar e orientar estudantes que estão entrando na programação agora, 
+                        ou que já possuem alguma prática.
+                    </h3>
+                </div>
+                    
+        
+            </section>
+            
+            <section class="externalMaterialText" id="">
+                <iframe 
+                    class="externalMaterialInnerText" 
+                    id=""
+                    src="https://docs.google.com/document/d/e/2PACX-1vQZVI8STDPFlIlhz0lhSXU0B-pk5luhQn0rybgtY4x85gIuw5nMwTFJGYUS--R51g/pub?embedded=true" 
+                    frameborder="0" 
+                    scrolling="no"
+                    allow="clipboard-read; clipboard-write"
+                    >Carregando…
+                </iframe>
+            </section>
+
+            <iframe
+                id=""
+                src="https://docs.google.com/document/d/e/2PACX-1vQZVI8STDPFlIlhz0lhSXU0B-pk5luhQn0rybgtY4x85gIuw5nMwTFJGYUS--R51g/pub?embedded=true" 
+                frameborder="0" 
+                scrolling="yes"
+                allow="clipboard-read; clipboard-write"
+                >Carregando…
+            </iframe>
+
+            <!-- <section class="externalMaterialText" id="">
+                <iframe 
+                    class="externalMaterialInnerText" 
+                    id=""
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSdoQ4U3Auu9RGL6fDAI915LJVgD7n2wIxRI20H6QdEDS2RdkKqpmGMPYV7xiQPFBw-agUvkAPTrSGx/pubhtml?widget=true&amp;headers=false" 
+                    frameborder="0" 
+                    scrolling="no"
+                    allow="clipboard-read; clipboard-write"
+                    >Carregando…
+                </iframe> -->
+
+            </section>
+
+        </div>
+
+
+        <footer class="footer">
+
+            <div class="footerBox">
+                <h1>
+                    <img src="{% static 'media/assets/logo.png'%}" alt="logo" id="footerLogo">
+                </h1>
+
+                <address>
+                    2022, Nova Friburgo-RJ<br>
+
+                    <a class="footerEmailContact" href="mailto:danielmello.nfa@gmail.com">Email</a>
+                    Caso encontre algum erro contate-nos por favor
+                </address>
+            </div>
+
+            <ul class="footerNav">
+                <li class="navItens">
+                    <h2 class="navTitle">Material Complementar</h2>
+
+                    <ul class="navUl">
+
+                        <li>
+                            <a href="https://miro.com/app/board/uXjVPA2Yxo0=/?share_link_id=842855256193"
+                                target="_blank">RoadMap de Prog em C</a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/DanielMelloo/Site-Prodocencia" target="_blank">Repositório do
+                                site</a>
+                        </li>
+
+                        <li>
+                            <a href="https://drive.google.com/drive/folders/1KYo69UxrvbUEaKxJQb0rC9NvMKpuY_bB?usp=sharing" 
+                            target="_blank">Material de Estudo</a>
+                        </li>
+                        
+                    </ul>
+
+                </li>
+
+
+                <li class="navItens">
+                    <h2 class="navTitle">Informações</h2>
+
+                    <ul class="navUl">
+
+                        <li>
+                            <a href="https://miro.com/app/board/uXjVPEUa1WU=/" target="_blank">MindMap do Projeto</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://miro.com/app/board/uXjVPA2Yxng=/" target="_blank">Fluxograma do site</a>
+                        </li>
+
+                        <li>
+                            <a href="https://docs.google.com/document/d/12BjceFw7ZLCK8AlDS4fYdbXk43fzAW3BytaWy9QAUHw/edit?usp=share_link" 
+                            target="_blank">Desenvolvimento do site</a>
+                        </li>
+                        
+                        
+                    </ul>
+
+                </li>
+
+                <li class="navItens">
+                    <h2 class="navTitle"></h2>
+                </li>
+
+            </ul>
+        </footer>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="{% static 'js/script.js'%}"></script>
+
+</body>

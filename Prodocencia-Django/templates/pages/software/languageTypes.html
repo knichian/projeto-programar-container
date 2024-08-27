@@ -1,0 +1,91 @@
+
+
+{% extends '../../base.html' %}
+
+{% block title%}Recém Implementada{% endblock %}
+
+{% load static %}
+
+{% block content %}
+
+<section class="topics-title">
+    <h2>
+        VANTAGENS EM CADA TIPO DE LINGUAGEM
+    </h2>
+
+    <h2>
+        (Máquina, baixo nível e alto nível)
+    </h2>
+</section>
+
+
+<section class="topics text">
+    <div class="topicsTextInner">
+        <h2>
+            Linguagem de máquina
+        </h2>
+        <h3>
+            - Controle Preciso: permite um controle extremamente preciso sobre o hardware do computador, pois as instruções são 
+            executadas diretamente pela CPU. Isso é essencial para programar dispositivos embarcados e sistemas operacionais.
+        </h3>
+
+        <h3>
+            - Eficiência Máxima: Os programas tendem a ser altamente eficientes, pois não há camada de abstração entre o código 
+            e o hardware. Isso é importante em sistemas de tempo real e onde os recursos são limitados.
+        </h3>
+        <img class="img-backNess" src="{% static 'media/' %}" alt="" onclick="openModal(this)"/>
+    </div>
+</section>
+
+<section class="topics text">
+    <div class="topicsTextInner">
+        <h2>
+            Linguagem de baixo nível 
+        </h2>
+
+        <h3>
+            - Controle Próximo ao Hardware: fornece um controle próximo ao hardware, permitindo otimizações de desempenho 
+            específicas da arquitetura, como a linguagem Assembly.
+        </h3>
+
+        <h3>
+            - Integração com Código de Alto Nível: É possível integrar código de baixo nível com código de alto nível, 
+            o que pode ser útil ao otimizar partes críticas de um programa.
+        </h3>
+        <img class="img-backNess" src="{% static 'media/' %}" alt="" onclick="openModal(this)"/>
+    </div>
+</section>
+
+
+<section class="topics text">
+    <div class="topicsTextInner">
+        <h2>
+            Linguagem de alto nível
+        </h2>
+
+        <h3>
+            - Abstração: oferece um alto nível de abstração, permitindo que os desenvolvedores se concentrem na lógica do 
+            programa em vez de detalhes de baixo nível, como gerenciamento de memória.
+        </h3>
+
+        <h3>
+            - Bibliotecas Abundantes: costuma ter bibliotecas e frameworks ricos, economizando tempo no desenvolvimento de software e 
+            facilitando tarefas comuns.
+        </h3>
+        <img class="img-backNess" src="{% static 'media/' %}" alt="" onclick="openModal(this)"/>
+    </div>
+</section>
+
+
+<a href="#" class="btnToMakeBorder">
+    <section class="buttons hover-effect5">
+        <div>
+            <h3>
+                Rolar Para o topo
+            </h3>
+        </div>
+    </section>
+</a>
+
+
+{% endblock %}

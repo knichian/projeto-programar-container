@@ -1,0 +1,59 @@
+{% extends "admin/base.html" %}
+
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'Django administration' %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% trans 'Site administration' %}</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    {% block messages %}
+    {% if messages %}
+    <ul class="messagelist">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endblock messages %}
+
+    <div class="module">
+        <table id="recent-actions">
+            <caption>{% trans 'Recent actions' %}</caption>
+            <tbody>
+                {% block recent-actions %}
+                {% load log %}
+                {% get_admin_log 10 as admin_log for_user user %}
+                {% for entry in admin_log %}
+                <tr class="{% cycle 'row1' 'row2' %}">
+                    <td class="action-time">{% admin_log_date entry.action_time %}</td>
+                    <td class="user">
+                        {% if entry.user_url %}
+                        <a href="{{ entry.user_url }}">{{ entry.user }}</a>
+                        {% else %}
+                        {{ entry.user }}
+                        {% endif %}
+                    </td>
+                    <td class="action-description">{% trans entry.description entry.object_repr %}</td>
+                </tr>
+                {% empty %}
+                <tr><td colspan="3">{% trans 'No recent actions' %}</td></tr>
+                {% endfor %}
+                {% endblock %}
+            </tbody>
+        </table>
+    </div>
+
+    {% block content-col %}
+    {% block object-tools %}{% endblock %}
+    {% block extracontent %}{% endblock %}
+    {% endblock %}
+</div>
+{% endblock %}
+
+{% block footer %}{% endblock %}

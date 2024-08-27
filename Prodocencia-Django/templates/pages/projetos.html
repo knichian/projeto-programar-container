@@ -1,0 +1,143 @@
+
+
+{% extends '../base.html' %}
+
+{% load static %}
+
+{% block title %}Projetos{% endblock %}
+
+{% block content %}
+
+    <section class="topics-title">
+        <h2>
+            Ideias que podem virar realidade usando programação
+        </h2>
+    </section>
+
+
+    <section class="topics text">
+        <a class="flip-a" href="https://danielmelloo.github.io/-portfolio/" target="_blank" rel="noopener noreferrer">
+            <div class="imgShow">
+                <h1>Portfolio</h1>
+                <h3>
+                    Este site é um exemplo do que pode ser feito aprendendo a programar, foi
+                    desenvolvido utilizando html, css e JavaScript
+                </h3>
+                <img src="{% static 'media/projects/portfolioFront.jpg' %}" alt="." />
+            </div>
+        </a>
+    </section>
+
+    <section class="topics text">
+        <a href="scriptNewton" target="_blank" rel="noopener noreferrer">
+            <div class="imgShow">
+                <h1>Scripts</h1>
+                <h3>
+                    Esse script feito em python serve para agilizar cálculos simples porém repetitivos
+                    e trabalhosos, e ao final de sua execução gera uma tabela com todos os resultados.
+                </h3>
+                <img src="{% static 'media/projects/scriptDeNewton.jpg' %}" alt="." />
+            </div>
+        </a>
+    </section>
+    
+    <section class="topics text">
+        <a href="calcLucaseDakro" target="_blank" rel="noopener noreferrer">
+            <div class="imgShow">
+                <h1>Scripts</h1>
+                <h3>
+                    <!-- Desenvolvido por Lucas Rodrigues e Dakró, este script automatizado calcula derivadas 
+                    e retas tangentes de funções matemáticas. Com entrada de função e ponto coordenado, o programa 
+                    gera resultados e gráficos para visualização. Flexível quanto à linguagem, torna a análise de funções 
+                    tangentes prática e eficiente. -->
+
+                    Um script para calcular derivadas e retas tangentes de funções matemáticas. O programa recebe uma função e gera gráficos para análise
+                    eficiente de funções tangentes.
+                </h3>
+                <img src="{% static 'media/projects/lucasedakro.jpg' %}" alt="." />
+            </div>
+        </a>
+    </section>
+    
+    <!-- <section class="topics">
+        <div class="flip-card">
+            <a class="flip-a" href="https://danielmelloo.github.io/-portfolio/" target="_blank" rel="noopener noreferrer">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="{% static 'media/projects/portfolioFront.jpg' %}" alt="." />
+                    </div>
+
+                    <div class="flip-card-back">
+                        <img src="{% static 'media/projects/portfolioBack.jpg' %}" alt="."/>
+
+
+                        <h1>Portfolio</h1>
+                        
+                        <h3>Este site é um exemplo do que pode ser feito aprendendo a programar, foi
+                            desenvolvido utilizando html, css e JavaScript
+                        </h3>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+    </section> -->
+
+    <!-- <section class="topics">
+        <div class="flip-card">
+            <a href="scriptNewton" target="_blank" rel="noopener noreferrer">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+
+                        <img src="{% static 'media/projects/scriptDeNewton.jpg' %}" alt="." />
+                    </div>
+
+                    <div class="flip-card-back">
+                        <img src="{% static 'media/projects/scriptDeNewton.jpg' %}" alt="."/>
+
+
+                        <h1>Scripts</h1>
+                        
+                        <h3>
+                            Esse script feito em python serve para agilizar cálculos simples porém repetitivos
+                            e trabalhosos, e ao final de sua execução gera uma tabela com todos os resultados.
+                        </h3>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+    </section> -->
+
+    <!-- <section class="topics">
+        <div class="flip-card">
+            <a href="calcLucaseDakro" target="_blank" rel="noopener noreferrer">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+
+                        <img src="{% static 'media/projects/lucasedakro.jpg' %}" alt="." />
+                    </div>
+
+                    <div class="flip-card-back">
+                        <img src="{% static 'media/projects/lucasedakro.jpg' %}" alt="."/>
+
+
+                        <h1>Scripts</h1>
+                        
+                        <h3>
+                            Desenvolvido por Lucas Rodrigues e Dakró, este script automatizado calcula derivadas 
+                            e retas tangentes de funções matemáticas. Com entrada de função e ponto coordenado, o programa 
+                            gera resultados e gráficos para visualização. Flexível quanto à linguagem, torna a análise de funções 
+                            tangentes prática e eficiente.
+                        </h3>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+    </section> -->
+    
+{% endblock %}

@@ -1,0 +1,508 @@
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Programar</title>
+    <link rel="icon" type="image/x-icon" href="static/media/assets/favicon.ico">
+    <link rel="stylesheet" href="static/css/style.css">
+
+<body>
+    <div class="page">
+
+        <div class="header">
+            <div class="headerContent" id="headerTitle">
+                <span translate="no"><a href="/">Projeto ProgAmar - Projeto Prodocência <!--:Objetos de Apreendizagem para o ensino de Algoritmos Computacionais e de conceitos de Programação--></a></span>
+            </div>
+
+
+            <nav role="navigation" id="menuNav">
+                <div id="menuToggle">
+
+                    <input id="button-menu" type="checkbox" onclick="toggle(this)"/>
+                    
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  
+                    <ul id="menu">
+
+                        <li>
+                            <a href="/">Início</a>
+                        </li>
+
+                        <li>
+                            <a href="projetos">Projetos</a>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="percurso">
+                            <label class="lbInput" for="percurso">Percurso</label>
+                            <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+        
+                            <ul>
+                                <li>
+                                    <a href="roadmap">RoadMap</a>   
+                                </li>
+
+                                 
+                                <li>                                
+                                    <input type="checkbox" id="level0">
+                                    <label class="lbInput" for="level0">Nível 0</label>
+                                    <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+
+                                    <ul>
+
+                                        <li>
+                                            <input type="checkbox" id="computerArq">
+                                            <label class="lbInput" for="computerArq">Arquitetura de Computadores</label>
+                                            <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+                                            
+                                            <ul>
+                                                <li>
+                                                    <a href="computerArq">O que é</a>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="dataStorage">
+                                                    <label class="lbInput" for="dataStorage">Amazenamento de Dados</label>
+                                                    <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+
+                                                    <ul>
+                                                        <li>
+                                                            <a href="ramMemory">
+                                                                Memória RAM
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                            <a href="internalStorage">
+                                                                Armazenamento Interno
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="page">
+                                                                Página
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="dataProcessing">
+                                                    <label class="lbInput" for="dataProcessing">Processamento de Dados</label>
+                                                    <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+                                                    
+                                                    <ul>
+                                                        <li>
+                                                            <a href="randomAcess">
+                                                                Acesso Aleatório
+                                                            </a>
+                                                        </li>
+            
+                                                        <li>
+                                                            <a href="processors">
+                                                                Processadores
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+            
+                                                </li>
+                    
+                                                <li>
+                                                    <input type="checkbox" id="computerLimitations">
+                                                    <label class="lbInput" for="computerLimitations">Limitações do Computador</label>
+                                                    <img class= "arrow" src="static/media/assets/arrow.png" alt=".">
+            
+                                                    <ul>
+                                                        <li>
+                                                            <a href="fileSize">
+                                                                Tamanho do Arquivo
+                                                            </a>
+                                                        </li>
+            
+                                                        <li>
+                                                            <a href="processingCapacity">
+                                                                Capacidade de Processamento
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+            
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="extraComputerArq">
+                                                    <label class="lbInput" for="extraComputerArq">Extra</label>
+                                                    <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+            
+                                                    <ul>
+                                                        <li>
+                                                            <a href="quiz">
+                                                                Quiz
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="computerArqVideo">
+                                                                Video sobre arquitetura de computadores
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+            
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <input type="checkbox" id="level1">
+                                    <label class="lbInput" for="level1">Nível 1</label>
+                                    <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="datatype">
+                                            <label class="lbInput" for="datatype">Tipos de Dados</label>
+                                            <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+
+                                            <ul>
+                                                <li>
+                                                    <a href="inteiro">Inteiro</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="real">Real</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="caractere">Caractere</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="string">String</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="boolean">Booleano</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>                                
+                                    <input type="checkbox" id="hardware">
+                                    <label class="lbInput" for="hardware">Hardware</label>
+                                    <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+
+                                    <ul>
+
+                                        <li>
+                                            <input type="checkbox" id="computerArq">
+                                            <label class="lbInput" for="computerArq">Arquitetura de Computadores</label>
+                                            <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+                                            
+                                            <ul>
+                                                <li>
+                                                    <a href="computerArq">O que é</a>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="dataStorage">
+                                                    <label class="lbInput" for="dataStorage">Amazenamento de Dados</label>
+                                                    <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+
+                                                    <ul>
+                                                        <li>
+                                                            <a href="ramMemory">
+                                                                Memória RAM
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                            <a href="internalStorage">
+                                                                Armazenamento Interno
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="dataProcessing">
+                                                    <label class="lbInput" for="dataProcessing">Processamento de Dados</label>
+                                                    <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+                                                    
+                                                    <ul>
+                                                        <li>
+                                                            <a href="randomAcess">
+                                                                Acesso Aleatório
+                                                            </a>
+                                                        </li>
+            
+                                                        <li>
+                                                            <a href="processors">
+                                                                Processadores
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+            
+                                                </li>
+                    
+                                                <li>
+                                                    <input type="checkbox" id="computerLimitations">
+                                                    <label class="lbInput" for="computerLimitations">Limitações do Computador</label>
+                                                    <img class= "arrow" src="static/media/assets/arrow.png" alt=".">
+            
+                                                    <ul>
+                                                        <li>
+                                                            <a href="fileSize">
+                                                                Tamanho do Arquivo
+                                                            </a>
+                                                        </li>
+            
+                                                        <li>
+                                                            <a href="processingCapacity">
+                                                                Capacidade de Processamento
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+            
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="extraComputerArq">
+                                                    <label class="lbInput" for="extraComputerArq">Extra</label>
+                                                    <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+            
+                                                    <ul>
+                                                        <li>
+                                                            <a href="quiz">
+                                                                Quiz
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="computerArqVideo">
+                                                                Como é um computador
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+            
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <input type="checkbox" id="software">
+                                    <label class="lbInput" for="software">Software</label>
+                                    <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="datatype">
+                                            <label class="lbInput" for="datatype">Tipos de Dados</label>
+                                            <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+
+                                            <ul>
+                                                <li>
+                                                    <a href="inteiro">Inteiro</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="real">Real</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="caractere">Caractere</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="string">String</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="boolean">Booleano</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <input type="checkbox" id="operators">
+                                            <label class="lbInput" for="operators">Operadores</label>
+                                            <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <input type="checkbox" id="programingLogic">
+                                    <label class="lbInput" for="programingLogic">Lógica de Programação</label>
+                                    <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+                                </li>
+                                
+
+                                <li>
+                                    <input type="checkbox" id="extraMain">
+                                    <label class="lbInput" for="extraMain">Extra</label>
+                                    <img loading="lazy" class= "arrow" src="static/media/assets/arrow.png" alt=".">
+
+                                </li>
+
+                                
+                            </ul>
+
+                        </li>
+
+
+                        <li>
+                            <a href="form">Questionário</a>
+                        </li>
+
+                    </ul> 
+
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="headerInv"></div>
+
+        <div class="main" id="main">  
+
+            <section class="topics-title">
+                
+                <div class="container-swap">
+                    <h1>Programar é</h1>
+                    <h3><span class="typedTextSwap">
+                        </span><span class="cursorSwap"><span class="cursor">&nbsp;</span></span>
+                    </h3>
+                </div>
+            </section>
+
+    
+            <section class="topics text">
+                <div class="topicsTextInner">
+                    <h2>
+                        Exemplo de pseudocódigo
+                    </h2>
+        
+                    <h3>
+                        Aqui está um exemplo de pseudocódigo para calcular a média de três números:
+                        
+        
+                    </h3>
+        
+                    <h3>
+                        <div class="code-box" id="code-1">
+<pre><code>
+Início
+    Ler número1
+    Ler número2
+    Ler número3
+    somar ← número1 + número2 + número3
+    média ← somar / 3
+    Escrever média
+Fim
+</pre></code>
+                        </div>
+                    </h3>
+
+                    <button class="copy-button" onclick="copyCode('#code-1')"><h3>Copiar código</h3></button>                    
+        
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="footer">
+
+            <div class="footerBox">
+                <h1>
+                    <img src="static/media/assets/logo.png" alt="logo" id="footerLogo">
+                </h1>
+
+                <address>
+                    2022, Nova Friburgo-RJ<br>
+
+                    <a class="footerEmailContact" href="mailto:prodocenciaprog@gmail.com">Email</a>
+                    Caso encontre algum erro contate-nos por favor
+                </address>
+            </div>
+
+            <ul class="footerNav">
+                <li class="navItens">
+                    <h2 class="navTitle">Material Complementar</h2>
+
+                    <ul class="navUl">
+
+                        <li>
+                            <a href="https://miro.com/app/live-embed/uXjVMQZOU6g=/?moveToViewport=-12339,4227,29138,13332&embedId=306682900000"
+                                target="_blank">RoadMap de Prog em C</a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/DanielMelloo/Site-Prodocencia" target="_blank">Repositório do
+                                site</a>
+                        </li>
+
+                        <li>
+                            <a href="https://drive.google.com/drive/folders/1ljIdEqyE9ygMUjSd99ECJxeeA9D2bk31?usp=share_link" 
+                            target="_blank">Material de Estudo</a>
+                        </li>
+                        
+                    </ul>
+
+                </li>
+
+
+                <li class="navItens">
+                    <h2 class="navTitle">Informações</h2>
+
+                    <ul class="navUl">
+                        <li>
+                            <a href="https://drive.google.com/file/d/1RUM6P1Hr1x32ta-5cWIeQVGAkGBG61QF/view?usp=share_link" target="_blank">Documentação do Projeto</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://miro.com/app/board/uXjVPA2Yxng=/" target="_blank">Fluxograma do site</a>
+                        </li>
+
+                        <li>
+                            <a href="https://docs.google.com/document/d/17_bahHiHu5YDyClh-JVb5-B9uSRoPI_b/edit?usp=share_link&ouid=108130290740587722835&rtpof=true&sd=true" 
+                            target="_blank">Desenvolvimento do site</a>
+                        </li>
+                        
+                        
+                    </ul>
+
+                </li>
+
+                <li class="navItens">
+                    <h2 class="navTitle"></h2>
+                </li>
+
+            </ul>
+        </footer>
+    </div>  
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    
+    <script src="static/js/script.js"></script>
+
+    
+
+</body>

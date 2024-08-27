@@ -1,0 +1,223 @@
+
+{% load static %}
+
+<img src="{% static 'path'%}" alt="." />
+
+<!-- Contador de Acessos -->
+
+<p>{{ counter_qr.count }}</p>
+
+<!-- Text on Background -->
+
+<section class="topics-title">
+    Ideias que podem virar realidade usando programação
+    <div class="container">
+        <h3><span class="typed-text"></span><span class="cursor">&nbsp;</span></h3>
+    </div>
+</section>
+
+<!-- Normal Card -->
+
+
+<section class="topics text">
+    <div class="topicsTextInner">
+        <h2>
+            Tópico
+        </h2>
+
+        <h3>
+            Explicação
+        </h3>
+    </div>
+</section>
+
+<!-- Button 1 -->
+
+<section class="buttons">
+    <a href="https://forms.gle/ubUAk5sKEZZAWekh8">
+        <div>
+            <h3>
+                Responder no Google
+            </h3>
+        </div>
+    </a>
+</section>
+
+<!-- Button 2 -->
+
+<a href="#"
+target="_blank">
+    <section class="buttons">
+        <div>
+            <h3>
+                Mais Informações
+            </h3>
+        </div>
+    </section>
+</a>
+
+<!-- Button 3 -->
+
+
+<a href="" 
+    target="_blank" class="btnToMakeBorder">
+    <section class="buttons hover-effect5">
+        <div>
+            <h3>
+                Algo
+            </h3>
+        </div>
+    </section>
+</a>
+
+<!-- Flip Card -->
+
+<section class="topics">
+    <div class="flip-card">
+        <a href="https://danielmelloo.github.io/-portfolio/" target="_blank" rel="noopener noreferrer">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+
+                    <img src="{% static 'media/assets/portfolioFront.jpg'%}" alt="." />
+                </div>
+
+                <div class="flip-card-back">
+                    <img src="{% static 'media/assets/portfolioBack.jpg'%}" alt="."/>
+                </div>
+
+                <div class="flip-card-back">
+                    <img src="{% static 'media/assets/portfolioBack.jpg'%}" alt="."/>
+
+
+                    <h1>Portfolio</h1>
+                    
+                    <h3>Este site é um exemplo do que pode ser feito aprendendo a programar, foi
+                        desenvolvido utilizando html, css e JavaScript
+                    </h3>
+
+                    <div class="container-toolTips">
+                        <h3><span class="typedTextToolTips"></span><span class="cursorToolTips">&nbsp;</span></h3>
+                    </div>
+
+                </div>
+            </div>
+        </a>
+    </div>
+    
+</section>
+
+<!-- Iframe Card -->
+
+<section class="externalMaterial" id="RoadMap">
+    <iframe 
+        class="ExternalMaterialInner" 
+        id="iframeRoadMap"
+        src="https://miro.com/app/live-embed/uXjVMQZOU6g=/?moveToViewport=-12339,4227,29138,13332&embedId=306682900000" 
+        frameborder="0" 
+        scrolling="no"
+        allow="fullscreen; clipboard-read; clipboard-write"
+        allowfullscreen>Carregando…
+    </iframe>
+</section>
+
+
+<!-- Code Section -->
+
+<section class="topics text">
+    <div class="topicsTextInner">
+        <h2>
+            Exemplo de pseudocódigo
+        </h2>
+
+        <h3>
+            Aqui está um exemplo de pseudocódigo para calcular a média de três números:
+            
+
+        </h3>
+
+        <h3>
+            <div class="code-box" id="code-1">
+<pre><code>
+Início
+Ler número1
+Ler número2
+Ler número3
+somar ← número1 + número2 + número3
+média ← somar / 3
+Escrever média
+Fim
+</pre></code>
+            </div>
+        </h3>
+
+        <button class="copy-button" onclick="copyCode('#code-1')"><h3>Copiar código</h3></button>
+
+    </div>
+</section>
+
+
+
+<!-- Mini Card -->
+
+
+<section class="externalMaterial" id="VideoArq1">
+    <h2>
+        Arquitetura de computadores parte 1
+    </h2>
+</section>
+
+
+<!-- Roll to Top -->
+
+<a href="#" class="btnToMakeBorder">
+    <section class="buttons hover-effect5">
+        <div>
+            <h3>
+                Rolar Para o topo
+            </h3>
+        </div>
+    </section>
+</a>
+
+<!-- Imagem com Zoom e com fundo -->
+
+<div class="makeInnerBorder">
+    <img
+        class="" 
+        src="{% static 'media/memory/CPU.jpg' %}" 
+        alt="A"
+        onclick="openModal(this)">
+</div>
+
+
+<!-- Imagem com Zoom -->
+
+
+<img class="img-backless" src="{% static 'media/assets/commonErrors/3/certo.png' %}" alt="Imagem" onclick="openModal(this)"/>
+
+
+<!-- Sumário -->
+
+<section class="topics text">
+    <div class="topicsTextInner">
+        <h2>
+            Sumário
+        </h2>
+
+        <h3 class="tabulated" style="text-align: left;">
+            <a href="#001" class="text-hover-effect">
+1) Erro de formatação para printf() e scanf()
+            </a>
+            <a href="#002" class="text-hover-effect">
+2) Argumento para scanf()
+            </a>
+            <a href="#003" class="text-hover-effect">
+3) Comparação Vs Atribuição
+            </a>
+            <a href="#004" class="text-hover-effect">
+4) Instrução-única Vs Bloco-de-instrução
+            </a>
+        </h3>
+
+    </div>
+</section>

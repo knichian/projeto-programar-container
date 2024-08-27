@@ -1,0 +1,146 @@
+
+
+{% extends '../../../base.html' %}
+
+{% block title%}Recém Implementada{% endblock %}
+
+{% load static %}
+
+{% block content %}
+
+
+<section class="topics-title">
+    <h2>
+        Tipos de memoria
+    </h2>
+</section>
+
+<section class="topics text">
+    <div class="topicsTextInner">
+        <h3>
+            São 5 tipos de memória, 3 de longo prazo e outras duas de curto prazo. O HDD, 
+            o SSD e a memória flash são memórias de longo prazo, as outras duas memórias são de curto prazo, 
+            que são as memórias RAM e a memória cache.
+        </h3>
+    </div>
+</section>
+
+<section class="topics-title">
+    <h2>
+        Onde eu acho cada uma delas?
+    </h2>
+</section>
+
+<section class="topics text">
+    <div class="topicsTextInner">
+        <h2>
+            HDD
+        </h2>
+
+        <h3>
+            O HDD tem o tamanho de 3.5 ou 2.5 polegadas e sempre se conecta a placa mãe via cabo sata! Seu armazenamento é feito de forma magnética e através de rotação de um CD dentro de si, e costuma ter uma velocidade média de leitura e armazenamento de 130Mb/s.
+        </h3>
+
+        <div class="makeInnerBorder">
+            <img
+                class="" 
+                src="{% static 'media/memory/HDD.jpg' %}" 
+                alt="Imagem de um HDD de 3,5 polegadas"
+                onclick="openModal(this)">
+        </div>
+    </div>
+</section>
+
+
+<section class="topics text">
+    <div class="topicsTextInner">
+        <h2>
+            SSD
+        </h2>
+
+        <h3>
+            O SSD tem o tamanho de 2.5 polegadas ou poderia ser uma peça com entrada NVME, seus componentes de armazenamento são memórias flashs para armazenar dados, em média a sua versão com cabo sata chega a 500Mb/s já sua versão NVME pode passar fácil os 2Gb/s isso em versões mais caras.
+        </h3>
+        <div class="makeInnerBorder">
+            <img
+                class="" 
+                src="{% static 'media/memory/SSD.jpg' %}" 
+                alt="Imagem de SSD's NVME de tamanhos variados"
+                onclick="openModal(this)">
+        </div>
+    </div>
+</section>
+
+<section class="topics text">
+    <div class="topicsTextInner">
+        <h2>
+            Memória Flash
+        </h2>
+
+        <h3>
+            A memória flash esses componentes se encontram num SSD e tbm em alguns notebooks, e sim seria a mesma memória de um pen-drive, só que soldado na Placa-mãe sua velocidade é a mesma do SSD, porém tem suas falhas, justamente por ser soldada, ela costuma ter entre 64GB e 128GB de armazenamento sendo o de 64 muito mais usado pelas empresas para baratear os custos.
+        </h3>
+        <div class="makeInnerBorder">
+            <img
+                class="" 
+                src="{% static 'media/memory/FlashMemory.jpg' %}" 
+                alt="Imagem de um SSD com chips de memória flash"
+                onclick="openModal(this)">
+        </div>
+    </div>
+</section>
+
+<section class="topics text">
+    <div class="topicsTextInner">
+        <h2>
+            Memória RAM
+        </h2>
+
+        <h3>
+            Memória RAM, também conhecida como memória de curto prazo, dependendo da versão da memória vc tem os modelos DDR3 ou 4 e a máxima velocidade respectivamente é de 1333Mh/s e 3200Mh/s, e sua função no computador é de abrigar o SO e todas as atividades que você abre em seu SO.
+        </h3>
+        
+        <div class="makeInnerBorder">
+            <img
+                class="" 
+                src="{% static 'media/memory/RAM.jpg' %}" 
+                alt="Imagem de uma memória RAM"
+                onclick="openModal(this)">
+        </div>
+    </div>
+</section>
+
+<section class="topics text">
+    <div class="topicsTextInner">
+        <h2>
+            Memória Cache
+        </h2>
+
+        <h3>
+            A memória cache fica dentro do processador, e são 3 tipos, com os nomes mais criativos, cache 1, cache 2 e cache 3, e entre elas a 1 é muito mais rápida que a 3, ou seja, entre elas a 3 é a mais lenta, e elas tbm guardam processos, como a RAM, más não tem condições de armazenar muita coisa, por isso o SO julga qual seria os processos mais importantes e que precisariam ser resolvidos logo.
+        </h3>
+
+        <div class="makeInnerBorder">
+            <img
+                class="" 
+                src="{% static 'media/memory/CPU.jpg' %}" 
+                alt="Imagemd e um processador (Imagem meramente ilustrativa)"
+                onclick="openModal(this)">
+        </div>
+    </div>
+</section>
+
+
+
+<a href="#" class="btnToMakeBorder">
+    <section class="buttons hover-effect5">
+        <div>
+            <h3>
+                Rolar Para o topo
+            </h3>
+        </div>
+    </section>
+</a>
+
+
+{% endblock %}

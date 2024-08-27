@@ -1,0 +1,123 @@
+
+
+{% extends '../base.html' %}
+
+{% block title%}Pensamento Computacional{% endblock %}
+
+{% load static %}
+
+{% block content %} 
+
+    <section class="topics text">
+        <div class="topicsTextInner">
+            <h2>
+                5 Habilidades do Pensamento Computacional
+            </h2>
+
+            <section class="externalMaterial">
+                <h3>
+                    de acordo com a Comunidade Internacional Bebras
+                </h3>
+            </section>
+        </div>
+    </section>
+
+    
+    <section class="topics text">
+        <div class="topicsTextInner">
+            <h2>
+                1- Decomposição
+            </h2>
+
+            <h3>
+                Quebrar problemas grandes e complexos em partes menores e mais simples de lidar
+            </h3>
+            <img class="imgBack" src="{% static 'media/computationalThinking/decomposicao.svg'%}" onclick="openModal(this)" alt="." />
+        </div>
+    </section>
+    
+    <section class="topics text">
+        <div class="topicsTextInner">
+            <h2>
+                2- Abstração
+            </h2>
+
+            <h3>
+                Focar apenas em informações importantes, ignorando detalhes irrelevantes.
+            </h3>
+            <img class="imgBack" src="{% static 'media/computationalThinking/abstracao.svg'%}" onclick="openModal(this)" alt="." />
+        </div>
+    </section>
+
+    <section class="topics text">
+        <div class="topicsTextInner">
+            <h2>
+                3- Reconhecimento de Padrões
+            </h2>
+
+            <h3>
+                Procurar similaridades e características em comum dentro de um problema ou entre diferentes problemas
+            </h3>
+            <img class="imgBack" src="{% static 'media/computationalThinking/padroes.svg'%}" onclick="openModal(this)" alt="." />
+        </div>
+    </section>
+
+    <section class="topics text">
+        <div class="topicsTextInner">
+            <h2>
+                4- Pensamento algorítmico
+            </h2>
+
+            <h3>
+                Desenvolver a solução de um problema passo a passo ou as regras para resolvê-lo.
+            </h3>
+            <img class="imgBack" src="{% static 'media/computationalThinking/algoritmico.svg'%}" onclick="openModal(this)" alt="." />
+        </div>
+    </section>
+
+    <section class="topics text">
+        <div class="topicsTextInner">
+            <h2>
+                5- Avaliação
+            </h2>
+
+            <h3>
+                Checar se a solução obtida é válida e correta.
+            </h3>
+            <img class="imgBack" src="{% static 'media/computationalThinking/avaliacao.png'%}" onclick="openModal(this)" alt="." />
+        </div>
+    </section>
+
+
+    <section class="topics text">
+        <div class="topicsTextInner">
+            <h2>
+                Vídeos
+            </h2>
+            <a href="https://www.youtube.com/watch?v=1oQhiWHuHy4" 
+                target="_blank" class="btnToMakeBorder">
+                <section class="buttons hover-effect2">
+                    <div>
+                        <h3>
+                            Pensamento Computacional: A Nova Disciplina da Educação Básica
+                        </h3>
+                    </div>
+                </section>
+            </a>
+            
+        </div>
+    </section>
+
+
+    <a href="#" class="btnToMakeBorder">
+        <section class="buttons hover-effect5">
+            <div>
+                <h3>
+                    Rolar Para o topo
+                </h3>
+            </div>
+        </section>
+    </a>
+
+
+{% endblock %}

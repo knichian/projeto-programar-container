@@ -1,0 +1,94 @@
+
+
+{% extends '../../../base.html' %}
+
+{% block title%}Pseudocódigo{% endblock %}
+
+{% block content %} 
+
+    <section class="topics text">
+        <div class="topicsTextInner">
+            <h2>
+                Pseudocódigo
+            </h2>
+
+            <h3>
+                O pseudocódigo é uma forma de representação de algoritmos que combina elementos da linguagem natural e 
+                de uma linguagem de programação específica.     Ele utiliza uma sintaxe simplificada para descrever 
+                os passos a serem seguidos na resolução de um problema.
+            </h3>
+        </div>
+    </section>
+
+    <section class="topics text">
+        <div class="topicsTextInner">
+            <h2>
+                Sintaxe do pseudocódigo
+            </h2>
+
+            <h3>
+                O pseudocódigo não possui uma sintaxe rigorosa, mas geralmente inclui estruturas de controle como loops 
+                (repetições) e condicionais, além de operações matemáticas e manipulação de variáveis.
+            </h3>
+        </div>
+    </section>
+
+    <section class="topics text">
+        <div class="topicsTextInner">
+            <h2>
+                Exemplo de pseudocódigo
+            </h2>
+
+            <h3>
+                Aqui está um exemplo de pseudocódigo para calcular a média de três números:
+                
+
+            </h3>
+
+            <h3>
+                <div class="code-box" id="code-1">
+<pre><code>
+Início
+    Ler número1
+    Ler número2
+    Ler número3
+    somar ← número1 + número2 + número3
+    média ← somar / 3
+    Escrever média
+Fim
+</pre></code>
+                </div>
+            </h3>
+
+            <button class="copy-button" onclick="copyCode('#code-1')"><h3>Copiar código</h3></button>
+
+        </div>
+    </section>
+
+    <section class="topics text">
+        <div class="topicsTextInner">
+            <h2>
+                Vantagens do pseudocódigo
+            </h2>
+
+            <h3>
+                O pseudocódigo permite uma representação mais próxima da linguagem de programação real, 
+                facilitando a transição para a codificação. Além disso, ele é mais flexível e fácil de entender 
+                do que a linguagem de programação em si.
+            </h3>
+        </div>
+    </section>
+
+    <a href="https://drive.google.com/file/d/18nnQHWQujSRVtDOopVJmX8LRBqE_R3K7/view?usp=share_link" 
+        target="_blank" class="btnToMakeBorder">
+        <section class="buttons hover-effect5">
+            <div>
+                <h3>
+                    Mais Informações
+                </h3>
+            </div>
+        </section>
+    </a>
+
+
+{% endblock %}

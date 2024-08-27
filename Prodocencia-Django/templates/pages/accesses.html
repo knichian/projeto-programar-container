@@ -1,0 +1,24 @@
+{% extends '../base.html' %}
+
+{% block title%}Acessos{% endblock %}
+
+{% load static %}
+
+{% block content %} 
+
+    <section class="topics text">
+        <div class="topicsTextInner">
+            <h2 id="siteObjectives">
+                Acessos
+            </h2> 
+
+            <h3>
+                <p>QR Code da Landing Page: {{ landing_counter_qr.count }}</p>
+                <p>QR Code do Questionário: {{ form_counter_qr.count }}</p>
+                <p>Página Inicial pelo link: {{ landing_counter.count }}</p>
+                <p>Página Inicial: {{ home_counter.count }}</p>
+            </h3>
+        </div>
+    </section>
+
+{% endblock %}
