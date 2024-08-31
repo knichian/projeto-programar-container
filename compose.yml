@@ -1,7 +1,11 @@
 services:
   projetoprogramar:
+    container_name: projetoprogramar_compose
     build: .
     ports:
       - 8110:8110
     volumes:
       - ./database:/root/Prodocencia-Django/database
+    tty: true
+    stdin_open: true
+    

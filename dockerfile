@@ -3,7 +3,7 @@ WORKDIR /root
 COPY Prodocencia-Django Prodocencia-Django
 COPY requirements.txt requirements.txt
 COPY conf conf
-COPY runserver.sh runserver.sh
+COPY django_start_app.sh django_start_app.sh
 RUN pip install -r requirements.txt
 EXPOSE 8110
-CMD [ "sh", "runserver.sh" ]
+CMD [ "sh", "django_start_app.sh" ]
