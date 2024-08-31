@@ -1,0 +1,6 @@
+[2024-08-31 16:20:41 +0000] [7] [INFO] Starting gunicorn 20.1.0
+[2024-08-31 16:20:41 +0000] [7] [INFO] Listening at: http://0.0.0.0:8110 (7)
+[2024-08-31 16:20:41 +0000] [7] [INFO] Using worker: sync
+[2024-08-31 16:20:41 +0000] [8] [INFO] Booting worker with pid: 8
+[2024-08-31 16:20:41 +0000] [9] [INFO] Booting worker with pid: 9
+[2024-08-31 16:20:41 +0000] [10] [INFO] Booting worker with pid: 10
