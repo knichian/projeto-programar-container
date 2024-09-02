@@ -1,0 +1,20 @@
+python3 -m venv django_venv
+
+source django_venv/bin/activate
+
+sudo service nginx start
+
+sudo netstat -tulpn
+
+systemctl status nginx
+
+gunicorn -c ../conf/gunicorn_config.py siteProdocencia.wsgi
+
+server start/stop/restart
+
+sudo nginx -t
+
+systemctl status certbot.timer
+
+
+gunicorn -c ../conf/gunicorn_config2.py testes.wsgi

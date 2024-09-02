@@ -44,7 +44,7 @@ DEBUG = os.getenv('DEBUG') == 'True'
 
 SETTINGS_PATH = os.path.abspath(__file__)
 
-ALLOWED_HOSTS = ['189.84.240.25', '100.117.225.48', 'cloudhub.iprj.uerj.br', '10.0.0.106:8110']
+ALLOWED_HOSTS = ['189.84.240.25', '100.117.225.48', 'cloudhub.iprj.uerj.br', '10.0.0.106:8110', '10.0.0.106']
 ALLOWED_HOSTS.extend(get_allowed_hosts(SETTINGS_PATH))
 
 CSRF_TRUSTED_ORIGINS = [
