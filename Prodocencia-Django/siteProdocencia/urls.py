@@ -6,12 +6,8 @@ from qr_counter.views import reset_all
 
 urlpatterns = [
 
-    path("", include("mainSite.urls")),
-    path("", include("qr_counter.urls")),
-    path("extProjects/", include("extProjects.urls")),
-
-    path('admin/', admin.site.urls),
-    path('admin/', include('django.contrib.auth.urls')),
+    path('projetoprogramar/admin/', admin.site.urls),
+    path('projetoprogramar/admin/', include('django.contrib.auth.urls')),
     # path('admin/reset', reset_counter),  
     # path('admin/reset', reset_all, name='reset_all'), 
 
