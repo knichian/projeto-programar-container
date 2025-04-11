@@ -1,5 +1,8 @@
+
+name: Projeto-Programar
+
 services:
-  projetoprogramar:
+  projeto-programar:
     container_name: projeto-programar-compose
     build: .
     ports:
