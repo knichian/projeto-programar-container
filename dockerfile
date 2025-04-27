@@ -6,4 +6,5 @@ COPY conf conf
 COPY django_start_app.sh django_start_app.sh
 RUN pip install -r requirements.txt
 EXPOSE 8110
+RUN python3 Prodocencia-Django/manage.py collectstatic --no-input
 CMD [ "sh", "django_start_app.sh" ]
