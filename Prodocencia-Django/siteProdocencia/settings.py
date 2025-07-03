@@ -173,10 +173,10 @@ USE_TZ = True
 
 # STATIC_URL = '/root/Prodocencia-Django/static/' # ( Gabriel: desativado e substituido pelo caminho mais simples )
 # STATIC_URL = '/static/' # ( Gabriel: caminho mais simples para requisição dos statics)
-STATIC_URL = '/projetoprogramar/static/' # ( Gabriel: caminho mais simples para requisição dos statics)
-STATICFILES_DIRS = [ BASE_DIR / 'static' ]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-STATIC_ROOT = BASE_DIR / "static_cdn"
+STATIC_URL = '/projetoprogramar/static/' # ( Gabriel: caminho mais simples para requisição dos statics)
+STATICFILES_DIRS = [ BASE_DIR / 'static' ] # ( Gabriel: destino inicial dos static-file no seu estado fonte )
+STATIC_ROOT = BASE_DIR / "static_cdn" # ( Gabriel: destino final dos static-files apos pre-processamento pelo whitenoise )
 
 
 # Default primary key field type
