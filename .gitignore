@@ -1,3 +1,1 @@
-database/logs/access.log
-database/logs/error.log
-database/db.sqlite3
+database/
